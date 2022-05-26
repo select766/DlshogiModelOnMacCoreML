@@ -8,23 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		AA8672CB283F4E9000764316 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8672CA283F4E9000764316 /* main.swift */; };
+		AA8672D2283F4F2200764316 /* DlShogiResnet15x224SwishBatch.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AA8672D1283F4F2200764316 /* DlShogiResnet15x224SwishBatch.mlmodel */; };
+		AA8672D7283F502E00764316 /* ModelRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8672D3283F502D00764316 /* ModelRunner.swift */; };
+		AA8672D8283F502E00764316 /* IsArrayClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8672D5283F502E00764316 /* IsArrayClose.swift */; };
+		AA8672D9283F502E00764316 /* SampleIOLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8672D6283F502E00764316 /* SampleIOLoader.swift */; };
+		AA8672DB283F63A000764316 /* SampleIO15x224MyData.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA8672DA283F527A00764316 /* SampleIO15x224MyData.bin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AA8672C5283F4E9000764316 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				AA8672DB283F63A000764316 /* SampleIO15x224MyData.bin in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA8672C7283F4E9000764316 /* DlshogiModelOnMacCoreML */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DlshogiModelOnMacCoreML; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8672CA283F4E9000764316 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AA8672D1283F4F2200764316 /* DlShogiResnet15x224SwishBatch.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DlShogiResnet15x224SwishBatch.mlmodel; sourceTree = "<group>"; };
+		AA8672D3283F502D00764316 /* ModelRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelRunner.swift; sourceTree = "<group>"; };
+		AA8672D5283F502E00764316 /* IsArrayClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsArrayClose.swift; sourceTree = "<group>"; };
+		AA8672D6283F502E00764316 /* SampleIOLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleIOLoader.swift; sourceTree = "<group>"; };
+		AA8672DA283F527A00764316 /* SampleIO15x224MyData.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = SampleIO15x224MyData.bin; sourceTree = "<group>"; };
+		AA8672DC283F890F00764316 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,7 @@
 		AA8672BE283F4E9000764316 = {
 			isa = PBXGroup;
 			children = (
+				AA8672DC283F890F00764316 /* README.md */,
 				AA8672C9283F4E9000764316 /* DlshogiModelOnMacCoreML */,
 				AA8672C8283F4E9000764316 /* Products */,
 			);
@@ -58,6 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				AA8672CA283F4E9000764316 /* main.swift */,
+				AA8672D1283F4F2200764316 /* DlShogiResnet15x224SwishBatch.mlmodel */,
+				AA8672D5283F502E00764316 /* IsArrayClose.swift */,
+				AA8672D3283F502D00764316 /* ModelRunner.swift */,
+				AA8672D6283F502E00764316 /* SampleIOLoader.swift */,
+				AA8672DA283F527A00764316 /* SampleIO15x224MyData.bin */,
 			);
 			path = DlshogiModelOnMacCoreML;
 			sourceTree = "<group>";
@@ -120,6 +138,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8672D7283F502E00764316 /* ModelRunner.swift in Sources */,
+				AA8672D2283F4F2200764316 /* DlShogiResnet15x224SwishBatch.mlmodel in Sources */,
+				AA8672D9283F502E00764316 /* SampleIOLoader.swift in Sources */,
+				AA8672D8283F502E00764316 /* IsArrayClose.swift in Sources */,
 				AA8672CB283F4E9000764316 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
